@@ -1,3 +1,24 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+   
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:grey; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  /* ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  } */
 /* Responsive Tablet */
 @media screen and (max-width: 768px){
     /* Navbar */
@@ -34,6 +55,10 @@
         margin-bottom: 20px;
     
     }
+    /* konten-3 */
+    .konten-3 .konten-3-bawah{
+        width: 200px;
+    }
 
 
     /* konten akhir */
@@ -61,16 +86,32 @@
         text-align: center;
     }
 
+    /* Header */
+    .header img{
+        width: 100%;
+    }
     .header{
-      overflow-x: hidden;
+        overflow-x: hidden;
+        background-image: url(foto/Asset/red-header-mobile.svg) !important;
+        background-size:100%;
+        background-position: 0 -100px;
+        height: 1250px;
+     
     
-   
-
-        
+        }
+    .header .btn{
+        width: 300px !important;
+        left: 20%;
+        right: 25%;
+        text-align: center;
+    }
+    .header h1{
+        text-size-adjust: 20%;
     }
     /* konten-1 */
     .konten-1{
         background-position: center right!important;
+       
 
     }
 
@@ -79,10 +120,17 @@
         background-position: center left!important;
 
     }
-
+    /* carousel */
+    /* .carousel .card{
+       margin: 1000px;
+    } */
     /* konten-3 */
 
     /* konten-4 */
+    .item{
+        margin: 0;
+        padding: 0;
+    }
 
     /* konten-5 */
 
@@ -123,16 +171,20 @@ p{
     right: 0;
 } */
 .header{
-   min-height: 800px;
+    min-height: 800px;
     padding: 150px 25px 20px 25px;
     color: white;
-    background-image: url(../foto/Asset/RedHeader.svg);
+    background-image: url(/foto/Asset/Red\ Header.svg);
     background-repeat: no-repeat;
-    top: 0;
 
+    
 
 }
+.header .wonderful{
+    padding: 20px 10px 0 0;
+}
 .header .btn{
+    font-weight: 600;
     padding: 10px;
     width: 200px;
     margin-top: 25px;
@@ -140,7 +192,14 @@ p{
     background-color: white;
     color: black;
     transition: 0.7s;
+    position: relative;
+    top: 10px;
 }
+.header .btn:hover{
+    box-shadow: 0 4px 10px rgb(0 0 0 / 25%);
+    top: 0;
+}
+
 .header .btn:hover{
     background-color: rgb(212, 212, 211);
 }
@@ -162,10 +221,11 @@ p{
 .konten-1{
     margin: 100px 0 50px 0;
     padding: 10px 25px;
-    background-image: url(../foto/Asset/lingkaran-kuning.svg);
+    background-image: url(/foto/Asset/lingkaran-kuning.svg);
     background-repeat: no-repeat;
     background-position: right top;
     background-size: 300px;
+    overflow: hidden;
 }
 .konten-1 button{
     padding: 15px;
@@ -195,8 +255,9 @@ p{
 .konten-2{
     /* margin-top: 20px; */
     padding: 10px 25px;
-    background-image: url(../foto/Asset/konten-3-lingkaran.svg);
+    background-image: url(/foto/Asset/konten-3-lingkaran.svg);
     background-repeat: no-repeat;
+    overflow: hidden;
     
 }
 .konten-2 button{
@@ -224,6 +285,7 @@ p{
 .konten-3{
     padding:10px 25px 0 25px;
     background-color: #F7B32D;
+    overflow: hidden;
 
    
 
@@ -245,26 +307,32 @@ p{
   }
   .konten-3 .inner{
     overflow: hidden;
-    border-radius: 15px 15px 0 0;
+    border-radius: 10px 10px 0 0;
 }
 .konten-3 .inner img{
     transition: all 1.5s ease;
-    border-radius: 15px 15px 0 0;
+    border-radius: 10px 10px 0 0;
 }
 .konten-3 .inner:hover img{
     transform: scale(1.5);
-    border-radius: 15px 15px 0 0;
+    border-radius: 10px 10px 0 0;
 }
 .konten-3 img {
     width: 100%;
     border-radius: 15px 15px 0 0;
   }
   /* Carousel */
+  .owl-dot{
+      background-color: rebeccapurple;
+  }
   .carousel .card{
-      border-radius: 20px;
+      border-radius: 10px;
       border: none;
-      box-shadow: 5px 10px 20px #2e2e2e;
+      box-shadow: -30px -20px 0 #f3deb3;
         margin: 20px 0 30px 0 ;
+        margin-right: 100px;
+        padding-bottom: 10px;
+
 
   }
   .carousel .card a{
@@ -273,7 +341,7 @@ p{
     
   }
   .carousel .card img{
-      border-radius: 20px 20px 0 0 ;
+      border-radius: 10px 10px 0 0 ;
   }
   .carousel .card .btn{
     padding: 15px;
@@ -282,6 +350,8 @@ p{
     transition: 0.7s;
     color: white;
     border: none;
+    position: relative;
+    top: 10px;
     
 }
   
@@ -291,9 +361,15 @@ p{
   .carousel .card .btn:hover{
     padding: 15px;
     border-radius: 20px;
-    background: linear-gradient(207deg, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 100%);
+    /* background: linear-gradient(207deg, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 100%); */
     border: none;
-  }
+    transition: all .25s ease;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 25%);
+    top: 0;
+}
+/* a {
+
+  } */
 .konten-3.svg{
     width: 100px;
 }
@@ -301,12 +377,15 @@ p{
 /* konten 4 */
 .konten-4{
     padding:10px 25px 50px 25px;
-    background-color:#EDBF63;
+    background-color: #C23131;
+    overflow: hidden;
+  
   
 
 }
 .konten-4 h2{
     font-weight: 900;
+    color: white;
 
 }
   .konten-4.container-fluid{
@@ -317,11 +396,12 @@ p{
     border-radius: 5px;
     border: none;
     
+    
 
   }
   .konten-4 .inner{
       overflow: hidden;
-      border-radius: 15px 15px 0 0;
+      border-radius: 10px 10px 0 0;
 
   }
   .konten-4 .inner img{
@@ -342,11 +422,13 @@ p{
    .btn a{
       font-family: poppins,sans-serif;
   }
-
+  
 
   /* konten 5 */
   .konten-5{
+    padding:10px 25px 50px 25px;
     background-color: #EDBF63;
+    overflow: hidden;
   }
   .konten-5 h2{
     font-weight: 900;
@@ -360,12 +442,12 @@ p{
     width: 18rem;
     border-radius: 5px;
     border: none;
-    
+  
 
   }
   .konten-5 .inner{
       overflow: hidden;
-      border-radius: 15px 15px 0 0;
+      border-radius: 10px 10px 0 0;
 
   }
   .konten-5 .inner img{
@@ -374,11 +456,11 @@ p{
   }
   .konten-5 .inner:hover img{
       transform: scale(1.5);
-      border-radius: 15px 15px 0 0;
+      border-radius: 10px 10px 0 0;
   }
   .konten-5 img {
     width: 100%;
-    border-radius: 15px 15px 0 0;
+    border-radius: 10px 10px 0 0;
   }
 
 
@@ -390,7 +472,7 @@ p{
   
 /* konten Akhir */
 .konten-akhir{
-    padding: 25px;
+    padding: 25px 25px 30px 25px;
     background-color: #C23131;
     color: white;
 }
@@ -413,11 +495,13 @@ p{
     justify-content: center;
     align-items: center;
     display: flex;
+    position: relative;
+    top: 10px;
     
 }
 .youtube:hover,.globe:hover,.instagram:hover{
-    background-color: #C00000;
-    border: none;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 25%);
+    top: 0;
   }
 .sosmed a{
     color: white;
@@ -430,9 +514,11 @@ p{
     border-radius: 10px;
     outline: 1px solid white;
     height: 100%;
-    transition: 10s;
+    transition: 1s;
+
 
   }
+
   /* .card-developers-1:hover{
     background-image: linear-gradient(to top, #0d6da8,transparent);;
   } */
@@ -447,12 +533,13 @@ p{
   .card-developers-1 a{
       color: white;
       margin: 0 3px;
-      transition: all 1.5s ease;
+
   }
   
 /* Footer */
 footer{
-    background-color:#C00000 ;
+    background-color:#c93f3f ;
+  
     padding: 10px;
     text-align: center; 
     color: white;
