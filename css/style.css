@@ -3,7 +3,7 @@
 }
 body {
   background-color: #ffffff;
-  background-image: url("/foto/Asset/Red\ Header.svg");
+  background-image: url("../foto/Asset/Red\ Header.svg");
   background-repeat: no-repeat;
   background-size: 850px;
   min-height: 90vh;
