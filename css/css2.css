@@ -35,8 +35,23 @@
         display: flex;
         flex-direction: column-reverse;
     }
+    .header{
+        overflow-x: hidden;
+        /* background-image: url(/foto/Asset/red-header-mobile.svg) !important; */
+        background-size:400%;
+        background-position: 0 -100px;
+        height: 1250px;
+        }
 
-
+        .header .wonderful{
+            padding-top: 10px !important;
+        }
+        .header .btn{
+            width: 300px !important;
+           
+           
+            text-align: center;
+        }
     /* konten-1 */
     .konten-1 img{
         margin-bottom: 20px;
@@ -62,6 +77,9 @@
 
 
     /* konten akhir */
+    .Dev{
+        display: none;
+    }
     .sosmed{
         justify-content: center;
     }
@@ -90,21 +108,12 @@
     .header img{
         width: 100%;
     }
-    .header{
-        overflow-x: hidden;
-        background-image: url(foto/Asset/red-header-mobile.svg) !important;
-        background-size:100%;
-        background-position: 0 -100px;
-        height: 1250px;
-     
-    
-        }
-    .header .btn{
+    /* .header .btn{
         width: 300px !important;
-        left: 20%;
-        right: 25%;
+        left: auto;
+        right: auto;
         text-align: center;
-    }
+    } */
     .header h1{
         text-size-adjust: 20%;
     }
@@ -121,6 +130,9 @@
 
     }
     /* carousel */
+    .card{
+        margin-right: 210px;
+    }
     /* .carousel .card{
        margin: 1000px;
     } */
@@ -133,6 +145,7 @@
     }
 
     /* konten-5 */
+
 
     /* konten-akhir */
 }
@@ -181,10 +194,10 @@ p{
 
 }
 .header .wonderful{
-    padding: 20px 10px 0 0;
+    padding: 60px 10px 0 0;
 }
 .header .btn{
-    font-weight: 600;
+    font-weight: 800;
     padding: 10px;
     width: 200px;
     margin-top: 25px;
@@ -208,7 +221,7 @@ p{
     font-size: 1.1rem;
 }
 .header h1{
-   font-size: 4rem;
+   font-size: 3rem;
 }
 .header img{
     position: relative;
@@ -322,14 +335,12 @@ p{
     border-radius: 15px 15px 0 0;
   }
   /* Carousel */
-  .owl-dot{
-      background-color: rebeccapurple;
-  }
+
   .carousel .card{
       border-radius: 10px;
       border: none;
       box-shadow: -30px -20px 0 #f3deb3;
-        margin: 20px 0 30px 0 ;
+        margin: 20px 0 10px 0 ;
         margin-right: 100px;
         padding-bottom: 10px;
 
@@ -352,6 +363,7 @@ p{
     border: none;
     position: relative;
     top: 10px;
+    left: 17%;
     
 }
   
@@ -361,7 +373,6 @@ p{
   .carousel .card .btn:hover{
     padding: 15px;
     border-radius: 20px;
-    /* background: linear-gradient(207deg, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 100%); */
     border: none;
     transition: all .25s ease;
     box-shadow: 0 4px 10px rgb(0 0 0 / 25%);
@@ -391,14 +402,16 @@ p{
   .konten-4.container-fluid{
     overflow-x: hidden;
   }
-  .konten-4.card {
-    width: 18rem;
-    border-radius: 5px;
-    border: none;
+  /* .konten-4 .carousel.card {
+    width: 19rem;
+    border-radius: 50px;
+    border: solid;
+    box-shadow: -30px -20px 0 red !important;
     
     
 
-  }
+  } */
+  
   .konten-4 .inner{
       overflow: hidden;
       border-radius: 10px 10px 0 0;
@@ -438,13 +451,13 @@ p{
   .konten-5.container-fluid{
     overflow-x: hidden;
   }
-  .konten-5.card {
+  /* .konten-5.card {
     width: 18rem;
     border-radius: 5px;
     border: none;
   
 
-  }
+  } */
   .konten-5 .inner{
       overflow: hidden;
       border-radius: 10px 10px 0 0;
