@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Animasi
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <!-- Animasi -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Carousel Animate -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
         integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
@@ -27,7 +27,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Wonderful Indonesia</title>
+    <title>Wonderful Kediri</title>
 </head>
 
 <body>
@@ -59,8 +59,8 @@
     <div class="container-fluid header">
         <div class="row header-1">
             <div class="col-md-6">
-                <h1>WONDERFUL <br>KEDIRI</h1>
-                <p>Kediri dikenal sebagai pusat perdagangan utama untuk gula dan industri rokok terbesar di
+                <h1 data-aos="fade-right">WONDERFUL <br>KEDIRI</h1>
+                <p data-aos="fade-right">Kediri dikenal sebagai pusat perdagangan utama untuk gula dan industri rokok terbesar di
                     Indonesia. Di kota ini juga, pabrik rokok kretek Gudang Garam berdiri dan berkembang. Pada tahun
                     2010, Kediri dinobatkan sebagai peringkat pertama Indonesia yaitu Most Recommended City for
                     Investment berdasarkan survei oleh SWA yang dibantu oleh Business Digest, unit bisnis riset grup
@@ -78,9 +78,9 @@
         <div class="row align-items-center">
             <div class="col-md-6">
                 <img src="https://images.unsplash.com/photo-1603088549155-6ae9395b928f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                    class="img-fluid" alt="">
+                    class="img-fluid" data-aos="fade-right" alt="">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-left">
                 <h2>FAKTA TENTANG BUDAYA KEDIRI</h2>
                 <p>Fakta, Kediri merupakan salah satu kabupaten di Jawa Timur yang memiliki banyak cerita sejarah serta
                     adat istiadat yang beragam. Beberapa Budaya dan Ritual Asli Kediri di antaranya bahkan masih
@@ -97,7 +97,7 @@
     <!-- konten-2 -->
     <div class="container-fluid konten-2">
         <div class="row align-items-center konten-2-flex">
-            <div class="col-md-6 konten-2-buttom">
+            <div class="col-md-6 konten-2-buttom" data-aos="fade-right">
                 <h2>FAKTA TENTANG KULINER KEDIRI</h2>
                 <p>Ketika berkunjung ke suatu daerah, mencicipi makanan khasnya adalah salah satu agenda yang wajib ada.
                     Begitu juga ketika berkunjung ke Kota Kediri. Setelah kita memanjakan mata melalui keindahan
@@ -109,7 +109,7 @@
                 </p>
                 <!-- <button type="button" class="btn btn-danger">Baca Selengkapnya</button> -->
             </div>
-            <div class="col-md-6 konten-2-top">
+            <div class="col-md-6 konten-2-top"  data-aos="fade-left">
                 <img src="https://images.unsplash.com/photo-1585704123905-b89826d5daa6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
                     class="img-fluid" alt="">
             </div>
@@ -120,10 +120,11 @@
     </div>
     <!-- Konten-3 -->
     <div class="container-fluid konten-3">
-        <div class="row text-center mb-5">
+        <div class="row text-center mb-5" data-aos="fade-up">
             <h2>BEBERAPA KULINER KHAS KEDIRI</h2>
         </div>
-        <div class="row carousel">
+        <div class="row carousel" data-aos="fade-up"  data-aos-easing="linear"
+        data-aos-duration="1000">
             <div class="owl-carousel owl-theme">
                 <div class="item">
                     <div class="card" style="width: 18rem;">
@@ -135,7 +136,7 @@
                             <h5 class="card-title">Tahu Takwa</h5>
                             <p class="card-text"> Tahu Kuning atau dikenal dengan sebutan Tahu Takwa adalah tahu
                                 yang berwarna kuning, yang disebabkan karena air rendaman tahu.</p>
-                            <form action="konten/tahutakwa.html">
+                            <form action="kontentahutakwa.html">
                                 <button class="btn" type="submit">Baca Selengkapnya</button>
                             </form>
                         </div>
@@ -238,10 +239,11 @@
         <img src="foto/Asset/konten-4-atas.svg" style="width: 100%" alt="" />
       </div>
       <div class="container-fluid konten-4">
-        <div class="row text-center mb-5">
+        <div class="row text-center mb-5" data-aos="fade-up">
           <h2>BEBERAPA BUDAYA KHAS KEDIRI</h2>
         </div>
-        <div class="row carousel jus">
+        <div class="row carousel"data-aos="fade-up"  data-aos-easing="linear"
+        data-aos-duration="1000">
           <div class="owl-carousel owl-theme">
             <div class="item">
               <div class="card" style="width: 18rem">
@@ -363,10 +365,11 @@
         <img src="foto/Asset/konten-4-atas.svg" style="width: 100%;" alt="">
     </div>
     <div class="container-fluid konten-5">
-        <div class="row text-center mb-5">
+        <div class="row text-center mb-5"  data-aos="fade-up">
             <h2>BEBERAPA TEMPAT WISATA DI KEDIRI</h2>
         </div>
-        <div class="row carousel jus">
+        <div class="row carousel" data-aos="fade-up"  data-aos-easing="linear"
+        data-aos-duration="1000">
             <div class="owl-carousel owl-theme">
                 <div class="item">
                     <div class="card" style="width: 18rem;">
@@ -479,9 +482,9 @@
             <div class="col-md-2 developers">
                 <div class="card-developers-1 text-center">
                     <img src="foto/alfin.png" class="" alt="">
-                    <p>Alfin Septian Eka Saputra</p>
+                    <p>Alfin Septian Eka <br> Saputra</p>
                     <a href="https://www.instagram.com/alfinseptian.es/"target="blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"target="blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://twitter.com/Alfinseptian_es?t=tfOpL83i3MicyUwd7YW5Ag&s=09"target="blank"><i class="fa-brands fa-twitter"></i></a>
                     <a href=" https://www.facebook.com/alfinseptian.ekasaputra.3"target="blank"><i class="fa-brands fa-facebook-f"></i></a>
                 </div>
             </div>
@@ -538,7 +541,7 @@
             // center:false, 
             nav: false,
             // autoplay:true,
-            stagePadding: 44,
+            stagePadding: 100,
             responsive: {
                 0: {
                     items: 1
@@ -553,6 +556,10 @@
         })
 
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 
 </body>
 
