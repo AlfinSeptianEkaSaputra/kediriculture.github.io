@@ -1,1 +1,1 @@
-# culturekediri.github.io
+# kediriculture.github.io
